@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Workouts - FitTrack</title>
+
+    <link rel="stylesheet" href="/CSS/gymApp.css" />
+    <link rel="stylesheet" href="/CSS/workOuts.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2>FitTrack</h2>
+
+      <ul>
+        <li><a href="gymApp.html">Home</a></li>
+        <li><a href="workOut.html">Workouts</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>🏋️ Workouts</h1>
+
+        <p>Complete today's exercises and track your progress.</p>
+      </header>
+
+      <section class="workout-list">
+        <div id="active-workout" class="workout-card">
+          <h2>Push Ups</h2>
+
+          <p>3 Sets × 15 Reps</p>
+
+          <span id="pushup-status"> Not Started </span>
+
+          <button id="pushup-btn">Start</button>
+        </div>
+
+        <div class="workout-card">
+          <h2>Squats</h2>
+
+          <p>3 Sets × 20 Reps</p>
+
+          <span id="squat-status"> Not Started </span>
+
+          <button id="squat-btn">Start</button>
+        </div>
+
+        <div class="workout-card">
+          <h2>Plank</h2>
+
+          <p>3 Sets × 30 Seconds</p>
+
+          <span id="plank-status"> Not Started </span>
+
+          <button id="plank-btn">Start</button>
+        </div>
+      </section>
+
+      <div class="bottom-buttons">
+        <button onclick="goHome()">Back Home</button>
+      </div>
+    </div>
+
+    <script src="/JS/gymApp.js"></script>
+  </body>
+</html>

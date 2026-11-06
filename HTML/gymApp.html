@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/GymApp.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <h2>FitTrack</h2>
+
+      <ul>
+        <li><a href="GymApp.html">Home</a></li>
+        <li><a href="workOut.html">Workouts</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Ready to workout?</h1>
+
+      <p>Track your workouts and reach your fitness goals.</p>
+
+      <button onclick="startWorkout()">Start Workout</button>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <h3>12</h3>
+        <p>Workouts</p>
+      </div>
+
+      <div class="stat">
+        <h3>5</h3>
+        <p>Day Streak</p>
+      </div>
+
+      <div class="stat">
+        <h3>2,450</h3>
+        <p>Calories</p>
+      </div>
+    </section>
+
+    <section class="workouts">
+      <h2>Today's Workouts</h2>
+
+      <div class="workout-container">
+        <div class="workout">
+          <h3>Push Ups</h3>
+          <p>3 sets × 15 reps</p>
+
+          <button onclick="pushUps()">Start</button>
+        </div>
+
+        <div class="workout">
+          <h3>Squats</h3>
+          <p>3 sets × 20 reps</p>
+
+          <button onclick="squats()">Start</button>
+        </div>
+
+        <div class="workout">
+          <h3>Plank</h3>
+          <p>3 sets × 30 seconds</p>
+
+          <button onclick="plank()">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 FitTrack</p>
+    </footer>
+
+    <script src="/JS/GymApp.js"></script>
+  </body>
+</html>
