@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Progress - FitTrack</title>
 
-   <link rel="stylesheet" href="/CSS/gymApp.css">
+    <link rel="stylesheet" href="/CSS/gymApp.css">
+    <link rel="stylesheet" href="/CSS/progress.css">
 </head>
 
 <body>
 
     <nav>
-       <h2>FitTrack</h2>
+        <h2>FitTrack</h2>
 
         <ul>
             <li><a href="gymApp.html">Home</a></li>
@@ -23,8 +24,59 @@
         </ul>
     </nav>
 
-    <h1>Progress</h1>
+    <section class="hero page-hero">
+        <h1>Your Progress</h1>
+        <p>Track your fitness journey.</p>
+    </section>
+
+    <main class="container">
+
+        <section class="progress-stats">
+
+            <div class="stat">
+                <h3 id="total-workouts">0</h3>
+                <p>Workouts</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="total-streak">0</h3>
+                <p>Day Streak</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="total-calories">0</h3>
+                <p>Calories</p>
+            </div>
+
+        </section>
+
+
+        <section class="progress-section">
+
+            <h2>Weekly Activity</h2>
+
+            <div class="chart" id="weekly-chart"></div>
+
+        </section>
+
+
+        <section class="progress-section">
+
+            <h2>Recent Workouts</h2>
+
+            <div class="recent-workouts" id="recent-workouts">
+                <p>No completed workouts yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FitTrack</p>
+    </footer>
+
+    <script src="/JS/gymApp.js"></script>
 
 </body>
-
 </html>

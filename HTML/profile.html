@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,14 @@
     <title>Profile - FitTrack</title>
 
     <link rel="stylesheet" href="/CSS/gymApp.css">
+    <link rel="stylesheet" href="/CSS/profile.css">
 </head>
 
 <body>
 
     <nav>
         <h2>FitTrack</h2>
+
         <ul>
             <li><a href="gymApp.html">Home</a></li>
             <li><a href="workOut.html">Workouts</a></li>
@@ -22,8 +23,100 @@
         </ul>
     </nav>
 
-    <h1>Profile</h1>
+    <section class="hero page-hero">
+        <h1>My Profile</h1>
+        <p>Manage your account and fitness goals.</p>
+    </section>
+
+    <main class="container">
+
+        <section class="profile-card">
+
+            <div class="profile-avatar">
+                <span>FT</span>
+            </div>
+
+            <div class="profile-info">
+
+                <h2 id="display-name">FitTrack User</h2>
+                <p>Manage your personal information.</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="profile-section">
+
+            <h2>Personal Information</h2>
+
+            <form id="profile-form">
+
+                <label for="profile-name">Full Name</label>
+                <input
+                    type="text"
+                    id="profile-name"
+                    disabled
+                    required
+                >
+
+                <label for="profile-email">Email Address</label>
+                <input
+                    type="email"
+                    id="profile-email"
+                    disabled
+                    required
+                >
+
+                <label for="profile-goal">Fitness Goals</label>
+                <textarea
+                    id="profile-goal"
+                    rows="3"
+                    disabled
+                    required
+                ></textarea>
+
+                <button type="button" id="edit-profile-btn">
+                    Edit Profile
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="profile-section">
+
+            <h2>Account Settings</h2>
+
+            <div class="settings-item">
+                <p>Application</p>
+                <span>FitTrack</span>
+            </div>
+
+            <div class="settings-item">
+                <p>Account Type</p>
+                <span>Personal</span>
+            </div>
+
+            <div class="settings-item">
+                <p>Version</p>
+                <span>1.0.0</span>
+            </div>
+
+        </section>
+
+        <div class="bottom-buttons">
+            <button onclick="goHome()">Back Home</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FitTrack</p>
+    </footer>
+
+    <script src="/JS/gymApp.js"></script>
 
 </body>
-
 </html>

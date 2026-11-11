@@ -1,0 +1,163 @@
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.page-hero {
+    padding: 65px 20px;
+}
+
+.page-hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    margin-bottom: 25px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-avatar span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+}
+
+.profile-info h2 {
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    color: #777;
+}
+
+.profile-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    margin-bottom: 25px;
+}
+
+.profile-section h2 {
+    margin-bottom: 20px;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#profile-form label {
+    font-weight: bold;
+}
+
+#profile-form input,
+#profile-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#profile-form input:disabled,
+#profile-form textarea:disabled {
+    background: #f4f4f4;
+    color: #555;
+}
+
+#profile-form button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.settings-item:last-child {
+    border-bottom: none;
+}
+
+.settings-item span {
+    color: #777;
+}
+
+.bottom-buttons {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.bottom-buttons button {
+    background: #111;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bottom-buttons button:hover {
+    background: #333;
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 0;
+    }
+
+    .profile-card {
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .profile-avatar {
+        width: 75px;
+        height: 75px;
+        flex-shrink: 0;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
+    }
+
+    .profile-section {
+        padding: 18px;
+    }
+}
